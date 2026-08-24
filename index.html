@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ali Digital Creative | Digital Services</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050b14;
+    color:white;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 7%;
+
+    background:rgba(5,11,20,.97);
+    border-bottom:1px solid #17334d;
+}
+
+.logo{
+    color:#00d9ff;
+    font-size:20px;
+    font-weight:bold;
+    letter-spacing:.5px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#00d9ff;
+}
+
+/* HERO */
+
+.hero{
+    min-height:88vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:70px 20px;
+
+    background:
+    radial-gradient(circle at top,#123b5c 0%,#071321 40%,#050b14 75%);
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 16px;
+    border:1px solid #00d9ff;
+    border-radius:30px;
+    color:#00d9ff;
+    margin-bottom:22px;
+    font-size:13px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.12;
+    margin-bottom:22px;
+}
+
+.blue{
+    color:#00d9ff;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#b9c7d4;
+    font-size:19px;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:6px;
+
+    background:#00d9ff;
+    color:#031018;
+
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(0,217,255,.5);
+}
+
+.btn-outline{
+    background:transparent;
+    border:1px solid #00d9ff;
+    color:#00d9ff;
+}
+
+/* GENERAL */
+
+section{
+    padding:85px 7%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.title span{
+    color:#00d9ff;
+}
+
+.subtitle{
+    max-width:700px;
+    margin:0 auto 45px;
+    text-align:center;
+    color:#9eafbd;
+}
+
+/* SERVICES */
+
+.services{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.service{
+    width:310px;
+    padding:35px 25px;
+
+    background:#0b1827;
+    border:1px solid #183750;
+    border-radius:16px;
+
+    text-align:center;
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-8px);
+    border-color:#00d9ff;
+    box-shadow:0 0 25px rgba(0,217,255,.15);
+}
+
+.service-icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.service h3{
+    color:#00d9ff;
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.service p{
+    color:#aebdca;
+}
+
+/* PORTFOLIO */
+
+#portfolio{
+    background:#081321;
+}
+
+.portfolio-title{
+    margin-top:55px;
+    margin-bottom:25px;
+    text-align:center;
+    font-size:28px;
+    color:#00d9ff;
+}
+
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+/* GRAPHIC POSTS */
+
+.graphic{
+    height:300px;
+    border-radius:15px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:25px;
+
+    background:
+    linear-gradient(135deg,#06172b,#0b4d70);
+
+    border:1px solid #1d4965;
+
+    transition:.3s;
+}
+
+.graphic:nth-child(2){
+    background:
+    linear-gradient(135deg,#170b2d,#5b1c68);
+}
+
+.graphic:nth-child(3){
+    background:
+    linear-gradient(135deg,#062523,#08766c);
+}
+
+.graphic:hover{
+    transform:translateY(-7px) scale(1.02);
+}
+
+.graphic small{
+    color:#00d9ff;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+.graphic h3{
+    font-size:28px;
+    margin:10px 0;
+}
+
+.graphic p{
+    color:#c1ced9;
+}
+
+/* VIDEO CARDS */
+
+.video-card{
+    background:#0b1827;
+    border:1px solid #183750;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.video-card:hover{
+    transform:translateY(-7px);
+    border-color:#00d9ff;
+}
+
+.video-preview{
+    height:210px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+    radial-gradient(circle,#16466b,#071321 70%);
+}
+
+.play{
+    width:65px;
+    height:65px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#00d9ff;
+    color:#031018;
+
+    border-radius:50%;
+    font-size:25px;
+}
+
+.video-info{
+    padding:20px;
+}
+
+.video-info h3{
+    color:#00d9ff;
+    margin-bottom:5px;
+}
+
+.video-info p{
+    color:#9eafbd;
+}
+
+/* ADS */
+
+.ad-card{
+    min-height:270px;
+    padding:30px;
+
+    border-radius:15px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(135deg,#111b31,#0a4a66);
+
+    border:1px solid #20445d;
+
+    transition:.3s;
+}
+
+.ad-card:nth-child(2){
+    background:
+    linear-gradient(135deg,#261026,#711d4c);
+}
+
+.ad-card:nth-child(3){
+    background:
+    linear-gradient(135deg,#102a17,#26733d);
+}
+
+.ad-card:hover{
+    transform:translateY(-7px);
+}
+
+.ad-card small{
+    color:#00d9ff;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.ad-card h3{
+    font-size:26px;
+    margin:10px 0;
+}
+
+.ad-card p{
+    color:#c2ced8;
+}
+
+/* ABOUT */
+
+.about{
+    text-align:center;
+}
+
+.about-text{
+    max-width:800px;
+    margin:auto;
+    color:#b6c3cf;
+    font-size:18px;
+}
+
+/* CONTACT */
+
+#contact{
+    background:#081321;
+}
+
+.contact-box{
+    max-width:650px;
+    margin:auto;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    background:#0b1827;
+    border:1px solid #183750;
+    border-radius:16px;
+}
+
+.contact-item{
+    margin:18px 0;
+    font-size:18px;
+}
+
+.contact-item a{
+    color:#00d9ff;
+    text-decoration:none;
+}
+
+.social{
+    color:#00d9ff;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px 20px;
+
+    background:#03070d;
+    color:#7f8d9b;
+}
+
+footer strong{
+    color:#00d9ff;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    nav{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav a{
+        margin:0 6px;
+        font-size:12px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    section{
+        padding:65px 20px;
+    }
+
+    .title{
+        font-size:31px;
+    }
+
+    .portfolio{
+        grid-template-columns:1fr;
+    }
+
+    .service{
+        width:100%;
+        max-width:350px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">
+ALI DIGITAL CREATIVE
+</div>
+
+<div>
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">
+CREATIVE DIGITAL AGENCY
+</div>
+
+<h1>
+
+Build Your Brand With
+
+<span class="blue">
+Creative Digital Solutions
+</span>
+
+</h1>
+
+<p>
+
+Professional Video Editing,
+Social Media Marketing and
+Graphics Designing for brands,
+businesses and creators.
+
+</p>
+
+<div class="buttons">
+
+<a href="#portfolio" class="btn">
+View Our Work
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="title">
+Our <span>Services</span>
+</h2>
+
+<p class="subtitle">
+
+Creative services designed to make
+your brand look professional,
+attractive and memorable.
+
+</p>
+
+
+<div class="services">
+
+
+<div class="service">
+
+<div class="service-icon">
+🎬
+</div>
+
+<h3>
+Video Editing
+</h3>
+
+<p>
+
+Professional editing for
+YouTube videos, Reels,
+Shorts, advertisements and
+social media content.
+
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+📱
+</div>
+
+<h3>
+Social Media Marketing
+</h3>
+
+<p>
+
+Creative social media content,
+advertising and marketing
+strategies to help brands
+grow online.
+
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🎨
+</div>
+
+<h3>
+Graphics Designing
+</h3>
+
+<p>
+
+Professional social media posts,
+advertisements, banners,
+branding designs and
+marketing graphics.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+
+<h2 class="title">
+Our <span>Portfolio</span>
+</h2>
+
+<p class="subtitle">
+
+Explore our creative work.
+These are currently demo projects
+and can later be replaced with
+your real work.
+
+</p>
+
+
+<!-- GRAPHICS -->
+
+<h3 class="portfolio-title">
+🎨 Graphics Designing
+</h3>
+
+<div class="portfolio">
+
+
+<div class="graphic">
+
+<div>
+
+<small>ALI DIGITAL CREATIVE</small>
+
+<h3>
+CREATIVE DESIGN
+</h3>
+
+<p>
+Professional Social Media Graphics
+</p>
+
+</div>
+
+</div>
+
+
+<div class="graphic">
+
+<div>
+
+<small>BRAND DESIGN</small>
+
+<h3>
+BUILD YOUR BRAND
+</h3>
+
+<p>
+Modern Advertising Creative
+</p>
+
+</div>
+
+</div>
+
+
+<div class="graphic">
+
+<div>
+
+<small>DIGITAL MARKETING</small>
+
+<h3>
+GROW ONLINE
+</h3>
+
+<p>
+Creative Promotional Design
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- VIDEO EDITING -->
+
+<h3 class="portfolio-title">
+🎬 Video Editing
+</h3>
+
+<div class="portfolio">
+
+
+<div class="video-card">
+
+<div class="video-preview">
+
+<div class="play">
+▶
+</div>
+
+</div>
+
+<div class="video-info">
+
+<h3>
+Social Media Reel
+</h3>
+
+<p>
+Short-form video editing
+for Instagram and TikTok.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="video-card">
+
+<div class="video-preview">
+
+<div class="play">
+▶
+</div>
+
+</div>
+
+<div class="video-info">
+
+<h3>
+YouTube Video
+</h3>
+
+<p>
+Professional editing for
+YouTube content and creators.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="video-card">
+
+<div class="video-preview">
+
+<div class="play">
+▶
+</div>
+
+</div>
+
+<div class="video-info">
+
+<h3>
+Business Advertisement
+</h3>
+
+<p>
+Creative promotional videos
+for businesses and brands.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- SOCIAL MEDIA ADS -->
+
+<h3 class="portfolio-title">
+📢 Social Media Advertising
+</h3>
+
+<div class="portfolio">
+
+
+<div class="ad-card">
+
+<div>
+
+<small>ADVERTISING</small>
+
+<h3>
+PROMOTE YOUR BRAND
+</h3>
+
+<p>
+Creative social media
+advertisement campaign.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="ad-card">
+
+<div>
+
+<small>BUSINESS GROWTH</small>
+
+<h3>
+REACH MORE PEOPLE
+</h3>
+
+<p>
+Modern promotional content
+for social platforms.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="ad-card">
+
+<div>
+
+<small>DIGITAL CAMPAIGN</small>
+
+<h3>
+GROW YOUR BUSINESS
+</h3>
+
+<p>
+Professional social media
+marketing creative.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2 class="title">
+About <span>Ali Digital Creative</span>
+</h2>
+
+<p class="about-text">
+
+Ali Digital Creative is a creative digital
+service brand focused on Video Editing,
+Social Media Marketing and Graphics Designing.
+
+Our goal is to help businesses, creators
+and brands build a professional and
+powerful online presence.
+
+</p>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="title">
+Let's <span>Work Together</span>
+</h2>
+
+<p class="subtitle">
+
+Have a project in mind?
+Contact Ali Digital Creative today.
+
+</p>
+
+
+<div class="contact-box">
+
+
+<div class="contact-item">
+
+📞 Phone:
+
+<a href="tel:03711272314">
+03711272314
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+📧 Email:
+
+<a href="mailto:veltraup@gmail.com">
+veltraup@gmail.com
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+🌐 Social Media:
+
+<span class="social">
+Ali Digital Creative
+</span>
+
+</div>
+
+
+<a
+href="https://wa.me/923711272314"
+target="_blank"
+class="btn">
+
+💬 WhatsApp Us
+
+</a>
+
+
+<a
+href="mailto:veltraup@gmail.com"
+class="btn btn-outline">
+
+📧 Send Email
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026
+<strong>Ali Digital Creative</strong>.
+All Rights Reserved.
+
+</p>
+
+<p>
+
+Video Editing • Social Media Marketing • Graphics Designing
+
+</p>
+
+</footer>
+
+
+</body>
+</html>
